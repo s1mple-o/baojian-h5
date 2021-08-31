@@ -1572,6 +1572,158 @@ footer .copy p {
 }
 
 
+/* 宝健25周年 */
+
+.anniversary-page {
+    width: 100%;
+}
+
+.anniversary-page .banner {
+    width: 100%;
+    height: 4.21rem;
+}
+
+.anniversary-page .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.anniversary-page .content-box {
+    width: 100%;
+    min-height: 36rem;
+    padding: .2rem .3rem 0;
+    background: url(../images/25-content-bg_02.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.anniversary-page .content-box .tap-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.anniversary-page .content-box .tap-box a {
+    border: 3px solid #00512c;
+    border-radius: 10px;
+    margin-bottom: .15rem;
+    text-align: center;
+    line-height: .85rem;
+    font-size: .32rem;
+    color: #fff;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: bold;
+}
+
+.anniversary-page .content-box .tap-box .active {
+    background-color: #00512c;
+}
+
+.anniversary-page .content-box .tap-box a:nth-child(1),
+.anniversary-page .content-box .tap-box a:nth-child(2),
+.anniversary-page .content-box .tap-box a:nth-child(3),
+.anniversary-page .content-box .tap-box a:nth-child(4) {
+    width: 1.66rem;
+    height: .9rem;
+}
+
+.anniversary-page .content-box .tap-box a:nth-child(n+5) {
+    width: 2.2rem;
+    height: .9rem;
+}
+
+#anniversary-swiper {
+    width: 100%;
+    background-color: #fff;
+    margin-top: .3rem;
+}
+
+#anniversary-swiper .swiper-slide {
+    padding: .2rem;
+    padding-bottom: 2.2rem;
+}
+
+#anniversary-swiper .slide-1 {
+    background: url(../images/anniversary-swiper-bg-1_03.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+}
+
+#anniversary-swiper h2 {
+    font-family: 'SourceHanSansCN-Bold';
+    font-size: .48rem;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin: .3rem 0 .5rem;
+}
+
+#anniversary-swiper h3 {
+    font-family: 'SourceHanSansCN-Bold';
+    font-size: .36rem;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin: .2rem 0;
+}
+
+#anniversary-swiper img {
+    width: 100%;
+    margin: .25rem 0;
+}
+
+#anniversary-swiper p {
+    font-family: 'SourceHanSansCN-Light';
+    font-size: .28rem;
+    font-weight: 200;
+    text-indent: 2em;
+    color: #000;
+    line-height: 1.8;
+    margin: .25rem 0;
+}
+
+#anniversary-swiper .product-title {
+    position: relative;
+    width: calc(100% + .4rem);
+    height: .6rem;
+    margin: 0 0 .2rem;
+    margin-left: -.2rem;
+    background-image: linear-gradient(45deg, #b49d74 0, #ddc499 50%, #b49d74 100%);
+    display: flex;
+    justify-content: center;
+}
+
+#anniversary-swiper .product-title b {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: .28rem;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: bold;
+    line-height: .6rem;
+}
+
+#anniversary-swiper .product-title b::before {
+    content: '';
+    width: .5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateX(-120%) translateY(50%);
+}
+
+#anniversary-swiper .product-title b::after {
+    content: '';
+    width: .5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateX(120%) translateY(50%);
+}
+
+
 /*兼容老设备的rem-px基准*/
 
 html {
