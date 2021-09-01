@@ -1592,6 +1592,7 @@ footer .copy p {
     width: 100%;
     min-height: 36rem;
     padding: .2rem .3rem 0;
+    padding-bottom: 1rem;
     background: url(../images/25-content-bg_02.jpg) no-repeat top center;
     background-size: 100% 100%;
 }
@@ -1647,6 +1648,12 @@ footer .copy p {
     background-size: 100% auto;
 }
 
+#anniversary-swiper .slide-2 {
+    /* padding-bottom: .3rem; */
+    background: url(../images/anniversary-swiper-bg-2_41.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+}
+
 #anniversary-swiper h2 {
     font-family: 'SourceHanSansCN-Bold';
     font-size: .48rem;
@@ -1659,6 +1666,15 @@ footer .copy p {
 #anniversary-swiper h3 {
     font-family: 'SourceHanSansCN-Bold';
     font-size: .36rem;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin: .2rem 0;
+}
+
+#anniversary-swiper h4 {
+    font-family: 'SourceHanSansCN-Bold';
+    font-size: .28rem;
     color: #000;
     font-weight: bold;
     text-align: center;
@@ -1684,7 +1700,7 @@ footer .copy p {
     position: relative;
     width: calc(100% + .4rem);
     height: .6rem;
-    margin: 0 0 .2rem;
+    margin: .2rem 0 .2rem;
     margin-left: -.2rem;
     background-image: linear-gradient(45deg, #b49d74 0, #ddc499 50%, #b49d74 100%);
     display: flex;
@@ -1721,6 +1737,99 @@ footer .copy p {
     top: 50%;
     right: 0;
     transform: translateX(120%) translateY(50%);
+}
+
+#anniversary-swiper .product-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#anniversary-swiper .product-list .col-5 {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#anniversary-swiper .product-list .col-10 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#anniversary-swiper .product-list a .pic {
+    width: 100%;
+}
+
+#anniversary-swiper .product-list a .pic img {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#anniversary-swiper .product-list a h3 {
+    font-size: .24rem;
+    font-family: 'SourceHanSansCN-Bold';
+    text-align: center;
+    color: #000;
+    margin: 0;
+}
+
+#anniversary-swiper .product-list a span {
+    font-size: .2rem;
+    font-family: 'SourceHanSansCN-Light';
+    color: #000;
+    text-align: center;
+    margin-top: .1rem;
+}
+
+#anniversary-swiper .map {
+    padding-top: 4.5rem;
+    background: url(../images/china-map_38.jpg) no-repeat top center;
+    background-size: 100% auto;
+}
+
+
+/* 精英伙伴 */
+
+#elite_people .swiper-slide {
+    width: 30%;
+    padding: 0;
+}
+
+#elite_people .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#elite_people .swiper-slide-active img {
+    margin-left: 0;
+    margin-right: 0;
+    transition: opacity 1s;
+}
+
+#elite_people .swiper-slide-prev img {
+    margin-left: -20%;
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+#elite_people .swiper-slide-next img {
+    margin-left: 20%;
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+#elite_people .swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+}
+
+#elite_people_txt .swiper-slide {
+    padding: 0;
 }
 
 
