@@ -163,6 +163,13 @@ div.clear {
     /* IE9 */
 }
 
+@font-face {
+    /* font-properties */
+    font-family: BarlowCondensed-ExtraBold;
+    src: url('../font/BarlowCondensed-ExtraBold.ttf');
+    /* IE9 */
+}
+
 
 /* 头部 */
 
@@ -632,17 +639,17 @@ footer .copy p {
     padding-bottom: .1rem;
 }
 
-.swiper-pagination-bullet {
+#ind-banner-pagination .swiper-pagination-bullet {
     width: .12rem;
     height: .12rem;
     opacity: 1;
 }
 
-.swiper-pagination-bullet {
+#ind-banner-pagination .swiper-pagination-bullet {
     background-color: #a0a0a0;
 }
 
-.swiper-pagination-bullet-active {
+#ind-banner-pagination .swiper-pagination-bullet-active {
     background-color: #b4a779;
 }
 
@@ -1654,6 +1661,30 @@ footer .copy p {
     background-size: 100% auto;
 }
 
+#anniversary-swiper .slide-3 {
+    background: url(../images/any-slide3-bg_03.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+}
+
+#anniversary-swiper .slide-4 {
+    background: url(../images/any-slide4-bg_03.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+}
+
+#anniversary-swiper .slide-5 {
+    background: url(../images/any-slide5-bg_19.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+}
+
+#anniversary-swiper .slide-6 {
+    padding-bottom: .5rem;
+}
+
+#anniversary-swiper .slide-7 {
+    background: url(../images/any-slide7-bg_09.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+}
+
 #anniversary-swiper h2 {
     font-family: 'SourceHanSansCN-Bold';
     font-size: .48rem;
@@ -1789,6 +1820,182 @@ footer .copy p {
     padding-top: 4.5rem;
     background: url(../images/china-map_38.jpg) no-repeat top center;
     background-size: 100% auto;
+}
+
+#anniversary-swiper .time {
+    font-family: 'BarlowCondensed-ExtraBold';
+    text-align: center;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    color: transparent;
+    font-size: .6rem;
+    background-image: linear-gradient(135deg, #988363, #e1b880);
+    position: relative;
+    text-shadow: 0 -30px 10px #fff;
+}
+
+
+/* 创业导航 */
+
+.business-box {
+    width: 100%;
+}
+
+.business-box .banner {
+    width: 100%;
+    height: 4.85rem;
+}
+
+.business-box .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.business-box .business-content {
+    width: 100%;
+    min-height: 80rem;
+    padding: .3rem;
+    background: url(../images/business-content-bg_03.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.business-content .business-platform {
+    width: 100%;
+}
+
+.business-content .business-platform h3 {
+    font-size: .48rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+.business-content .business-platform h3 span {
+    vertical-align: bottom;
+    font-family: 'BarlowCondensed-ExtraBold';
+    text-align: center;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    color: transparent;
+    font-size: .48rem;
+    background-image: linear-gradient(135deg, #988363, #e1b880);
+}
+
+.business-content .business-platform .business-platform-tap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: .6rem;
+}
+
+.business-content .business-platform .business-platform-tap a {
+    width: 3.38rem;
+    height: .9rem;
+    text-align: center;
+    font-size: .32rem;
+    color: #fff;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: bold;
+    line-height: .9rem;
+    margin-bottom: .2rem;
+    border: 2px solid #093f2c;
+    border-radius: 10px;
+}
+
+.business-content .business-platform .business-platform-tap .active {
+    border: none;
+    background-image: linear-gradient(135deg, #00783b, #093f2b);
+}
+
+#business_start_swiper {
+    margin-top: .3rem;
+}
+
+#business_start_swiper .swiper-slide {
+    width: 100%;
+    padding: .5rem .4rem .8rem;
+    background-color: #fff;
+}
+
+#business_start_swiper .swiper-slide p {
+    font-size: .22rem;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: .1rem;
+    font-family: 'SourceHanSansCN-Light';
+}
+
+#business_start_swiper .swiper-slide p a {
+    color: #000;
+}
+
+#business_start_swiper .swiper-slide .up-down {
+    display: none;
+}
+
+#business_start_swiper .swiper-slide .more-down {
+    cursor: pointer;
+    width: 2rem;
+    height: .5rem;
+    margin: .2rem auto 0;
+    border: 2px solid #016532;
+    border-radius: 30px;
+    text-align: center;
+    line-height: .45rem;
+    font-family: "SourceHanSansCN-Medium";
+    position: relative;
+}
+
+#business_start_swiper .swiper-slide .more-down::after {
+    content: '';
+    position: absolute;
+    bottom: -.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-top: .2rem solid #016532;
+    border-right: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid transparent;
+}
+
+#business_start_swiper .swiper-slide .more-up {
+    display: none;
+    cursor: pointer;
+    width: 2rem;
+    height: .5rem;
+    margin: .2rem auto 0;
+    border: 2px solid #016532;
+    border-radius: 30px;
+    text-align: center;
+    line-height: .45rem;
+    font-family: "SourceHanSansCN-Medium";
+    position: relative;
+}
+
+#business_start_swiper .swiper-slide .more-up::after {
+    content: '';
+    position: absolute;
+    bottom: -.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-bottom: .2rem solid #016532;
+    border-right: .2rem solid transparent;
+    border-top: .2rem solid transparent;
+    border-left: .2rem solid transparent;
 }
 
 

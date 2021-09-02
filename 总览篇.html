@@ -109,7 +109,7 @@
                 <a href="javascript:;" data-id="6" class="tap-btn">享受生活篇</a>
                 <a href="javascript:;" data-id="7" class="tap-btn">未来篇</a>
             </div>
-            <div class="swiper-container" id="anniversary-swiper">
+            <div class="swiper-container swiper-no-swiping" id="anniversary-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide-1">
                         <h2>廿五载<br> 尽罗天下宝 求添世人健</h2>
@@ -349,7 +349,7 @@
                         <p>宝健在成立初期，就以保障消费者权益为要务，设立高于国标的【退换货制度】。承诺7天内已开封产品无因退货、60日未开封产品无因退货满意保证、保质期内因产品质量问题换货等制度，保障消费者退换货工作的有序开展，为消费者带来良好的退换货服务体验。</p>
 
                     </div>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide slide-3">
                         <h2>良心事业<br>成就千万行业精英
                         </h2>
                         <p><b>“良心、信心、耐心、责任心”</b> ，宝健凭此吸引了无数志同道合的伙伴，共同构筑健康事业。在宝健稳定公平的平台上，成千上万的伙伴通过自己的努力脱颖而出，成为行业精英人士，让自己和家人过上了理想中的生活。</p>
@@ -393,8 +393,8 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <img src="./images/any-slide2-people_03.jpg" alt="">
-
                                 </div>
+                                <div class="swiper-slide"><img src="./images/any-slide2-people_03.jpg" alt=""></div>
                                 <div class="swiper-slide"><img src="./images/any-slide2-people_03.jpg" alt=""></div>
                                 <div class="swiper-slide"><img src="./images/any-slide2-people_03.jpg" alt=""></div>
                                 <div class="swiper-slide"><img src="./images/any-slide2-people_03.jpg" alt=""></div>
@@ -411,34 +411,71 @@
 
                         </div>
                         <script>
-                            var mySwiper2 = new Swiper('#elite_people', {
+                            var ep = new Swiper('#elite_people', {
                                 slidesPerView: 3,
                                 centeredSlides: true,
                                 centeredSlidesBounds: true,
-
+                                loop: true,
                                 navigation: {
                                     nextEl: '.swiper-button-next',
                                     prevEl: '.swiper-button-prev',
-                                }
+                                },
+                                on: {
+                                    slideChangeTransitionStart: function() {
+                                        // alert(this.activeIndex);
+                                        console.log(this.activeIndex)
+                                        if (this.activeIndex == 3) {
+                                            return false;
+                                        } else {
+                                            ept.slideTo(this.activeIndex - 2)
+
+                                        }
+                                    },
+                                },
+
                             })
                         </script>
                         <div class="swiper-container" id="elite_people_txt">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="txt">
-                                        <h4 style="margin: 0;">方天祉 </h4>
+                                        <h4 style="margin: 0;">方天祉1 </h4>
                                         <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="txt">
-                                        <h4 style="margin: 0;">方天祉 </h4>
+                                        <h4 style="margin: 0;">方天祉2 </h4>
                                         <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="txt">
-                                        <h4 style="margin: 0;">方天祉 </h4>
+                                        <h4 style="margin: 0;">方天祉3 </h4>
+                                        <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt">
+                                        <h4 style="margin: 0;">方天祉4 </h4>
+                                        <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt">
+                                        <h4 style="margin: 0;">方天祉5 </h4>
+                                        <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt">
+                                        <h4 style="margin: 0;">方天祉6 </h4>
+                                        <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="txt">
+                                        <h4 style="margin: 0;">方天祉7 </h4>
                                         <p style="margin: .1rem 0;font-size: .24rem;line-height: 1.2;;text-indent: 0;text-align: center;">退休的大学教授，跟随宝健打卡全球旅游，享受有钱有闲有精力额顶级人生。</p>
                                     </div>
                                 </div>
@@ -446,17 +483,169 @@
 
                         </div>
                         <script>
-                            var mySwiper = new Swiper('#elite_people_txt', {
+                            var ept = new Swiper('#elite_people_txt', {
                                 direction: 'horizontal', // 垂直切换选项
                                 loop: true, // 循环模式选项
-
+                                effect: 'fade',
+                                fadeEffect: {
+                                    crossFade: true,
+                                }
                             })
                         </script>
                     </div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide slide-4">
+                        <h2>保持诚信 用于担当<br> 将国家和人民的利益放在首位
+                        </h2>
+                        <h3>多次逆向投资</h3>
+                        <p><b>25年来</b> ，不管周遭环境如何变化，宝健始终扎根中国、立足北京，坚定相信中国经济发展大好前景，多次逆向投资，与祖国站在一起，同呼吸、共命运。</p>
+                        <img src="./images/any-slide4-pic_03.jpg" alt="">
+                        <div class="time">2008</div>
+                        <p> 宝健投入近5亿人民币在北京经济技术开发区建成亚太区营运总部，面积近5万平方米，是当时北京规模较大的健康产业中心之一。
+                        </p>
+                        <img src="./images/any-slide4-pic_06.jpg" alt="">
+                        <div class="time">2009</div>
+                        <p>国际金融危机爆发，全球经济跌入低谷。宝健始终坚信中国稳定的投资环境以及中国经济良好的发展态势，在外资纷纷撤离中国之际，宝健与北京市政府签订协议，逆向投入10亿元人民币，用于扩大投资，建设生产基地、物流仓库，设立覆盖全中国的分公司体系，并积极以中国为基地，开展向全球供应布局。</p>
+                        <img src="./images/any-slide4-pic_08.jpg" alt="">
+
+                        <div class="time">2016</div>
+                        <p> 宝健响应国家号召，计划投资20亿，建设宝健新城，并根据新的首都功能定位，积极推动BDA园区改造，进一步完善功能、科学布局、提升硬件，助力开发区建设与转型。预计未来产值可达200亿元。</p>
+                        <img src="./images/any-slide4-pic_10.jpg" alt="">
+                        <div class="time">2020</div>
+                        <p>宝健再投资6.5亿人民币，在北京经济技术开发区建设BDA二期，规划建筑面积40000平方米。</p>
+                        <p>宝健计划在BDA二区建设生产中心、物流仓库、原材料及办公楼等配套设施，以及现代化的食品及保健食品GMP车间，新增15条生产线，用于生产片剂、硬胶囊、粉剂、颗粒剂、软胶囊、糖果等系列保健产品和营养食品。建成后预计带动100亿产能。
+                        </p>
+                        <p>立足京津冀良好的投资环境，以实际行动支持国家发展战略！ </p>
+                        <img src="./images/any-slide4-pic_12.jpg" alt="">
+                        <h3>勇于担当责任</h3>
+                        <p>作为一家有着强烈社会责任感的企业，宝健始终保持诚信、勇于担当，将国家和人民的利益放在首位。</p>
+                        <p>国家和人民有需要时，宝健从不缺席。</p>
+                        <p>2003年 春天，非典席卷中国。作为世界公认的能增强免疫力的营养素，初乳原料在这个时期遭到了全世界的疯狂抢购，价格持续上涨。</p>
+                        <p> 一边是成本加倍增长一边是市场需求空前，宝健以国难为先，顶住亏损的压力，坚持按原价销售产品。</p>
+                        <p> 然而屋漏偏逢连夜雨，就在此时，一批刚购进的初乳原料经检测，IgG含量标准未能达到26（宝健初乳产品承诺的IgG含量为23，但因初乳原料IgG含量会随时间递减，为了保证产品的有效成分在保质期内不低于核定值，宝健将初乳原料的IgG含量标准提高到26）。</p>
+                        <p>尽管使用这批原料生产出来的产品仍然是符合国家标准的，但为了坚守对消费者的承诺，宝健毅然销毁了这批原料！用实际行动证明：在宝健，产品品质高于一切！</p>
+                        <img src="./images/any-slide4-pic_14.jpg" alt="">
+                        <p><b>2020年</b>，新冠疫情爆发，宝健作为健康产业的代表之一，急前线之所需，先后多次捐赠防疫物资超3000万元。并积极严密抗疫，科学有序复工复产，与全国人民一起，共克时艰。 </p>
+
+                    </div>
+                    <div class="swiper-slide slide-5">
+                        <h2>有宝健人的地方就有希望</h2>
+                        <p>秉持“有宝健人的地方就有希望”，宝健坚持公益24年，捐赠超过3亿元，召集10万爱心志愿者，将公益融入了企业文化，融入了每个宝健人的生活，爱自己、爱他人，每时每刻都在奉献着自己的价值。</p>
+                        <img src="./images/any-slide5-pic_03.jpg" alt="">
+                        <h3>宝健希望学校</h3>
+                        <p><b>1997年</b> 河北省张家口的第一所宝健希望小学至今，宝健在全国已捐建了110余所宝健希望小学和农民工子弟学校，帮扶超过15万名青少年与弱势群体重拾梦想。</p>
+                        <img src="./images/any-slide5-pic_06.jpg" alt="">
+                        <h3>关爱园丁</h3>
+                        <p><b>2017年</b> 9月，宝健携手中国青少年发展基金会，启动专门帮扶贫困地区教师的“关爱园丁”公益项目，通过“健康、环境改善、海外研习、培训”等计划和行动，为贫困地区教师提供长期稳定的援助、支持。</p>
+                        <img src="./images/any-slide5-pic_09.jpg" alt="">
+                        <h3>抗险救灾</h3>
+                        <p><b>1998年</b>洪灾、 <b>2003年</b>非典、<b>2008年</b>汶川地震、 <b>2009年</b>台湾8·8水灾、台湾喜憨儿、<b>2010年</b>西南旱灾、 <b>2013年</b>雅安地震、<b>2014年</b>鲁甸地震、<b>2019年</b>凉山森林火灾……哪里有难，哪里需要帮助，哪里就有宝健人的身影。</p>
+                        <img src="./images/any-slide5-pic_12.jpg" alt="">
+                        <h3>精准扶贫</h3>
+                        <p><b>清泉计划：</b> 针对经济条件特别落后、学校物质条件不足的地区，已为近30所当地的宝健希望学校捐建太阳能浴室和环保厕所，解决当地师生最迫切最基本的生活需求。</p>
+                        <p><b>广西水柜：</b> 宝健公益基金会捐资1000万元，帮助广西大石山区缺水贫困群众建设“同心水柜”，为7000余名贫困村民解决用水问题。</p>
+                        <p><b>新疆墨玉：</b> 积极参与首都统一战线组织的北京援疆项目，为墨玉县十个贫困村购置农用物资、引入农科技术、建设农用设施、拓展农产品销售渠道等，助力该地区如期打赢脱贫攻坚战。</p>
+                        <p><b>2018年：</b> 12月26日，中国青年创业就业基金会和宝健共同发起宝健精准扶贫自主创业项目，以贫困地区为重点，以中国青年创业大讲堂为载体，开展创业培训，就业援助和创业扶助等工作。</p>
+                        <h3>工艺奖项</h3>
+                        <img src="./images/any-slide5-pic_15.jpg" alt="">
+                        <h4 style="text-align: center;">1997年</h4>
+                        <p style="text-indent: 0;text-align: center;">希望工程捐款20万</p>
+                        <h4 style="text-align: center;">2001年</h4>
+                        <p style="text-indent: 0;text-align: center;">年度突出贡献牌匾</p>
+                        <h4 style="text-align: center;">2005年</h4>
+                        <p style="text-indent: 0;text-align: center;">BDA2005年度纳税额千万元以上扶残助残 造福社会</p>
+                        <h4 style="text-align: center;">2006年</h4>
+                        <p style="text-indent: 0;text-align: center;">李道总裁荣获“中国公益事业十大慈善大使”</p>
+                        <h4 style="text-align: center;">2007年</h4>
+                        <p style="text-indent: 0;text-align: center;">希望工程特别贡献奖</p>
+                        <h4 style="text-align: center;">2008年</h4>
+                        <p style="text-indent: 0;text-align: center;">志愿服务贡献奖先进集体牌匾</p>
+                        <p style="text-indent: 0;text-align: center;">李道总裁当选“公益之子”</p>
+                        <p style="text-indent: 0;text-align: center;">荣获北京市政府授予在京外国专家的最高荣誉</p>
+                        <p style="text-indent: 0;text-align: center;">“长城友谊奖”</p>
+                        <h4 style="text-align: center;">2009年</h4>
+                        <p style="text-indent: 0;text-align: center;">年度最具创意公益案例、2009跨国公</p>
+                        <p style="text-indent: 0;text-align: center;">司中国贡献榜100强</p>
+                        <p style="text-indent: 0;text-align: center;">希望工程20年特殊贡献奖</p>
+                        <p style="text-indent: 0;text-align: center;">李道总裁获评“2009国庆60年影响中华公益的杰出</p>
+                        <p style="text-indent: 0;text-align: center;">慈善家”</p>
+                        <h4 style="text-align: center;">2010年</h4>
+                        <p style="text-indent: 0;text-align: center;">志愿力量奖</p>
+
+                        <h4 style="text-align: center;">2011年</h4>
+                        <p style="text-indent: 0;text-align: center;">中华慈善排行榜上榜慈善企业</p>
+                        <h4 style="text-align: center;">2014年</h4>
+                        <p style="text-indent: 0;text-align: center;">希望工程25年杰出贡献奖</p>
+                        <h4 style="text-align: center;">2020年</h4>
+                        <p style="text-indent: 0;text-align: center;">CSR</p>
+                    </div>
+                    <div class="swiper-slide slide-6">
+                        <h2>轻松就业 乐享生活</h2>
+                        <p><b>健康</b> 是生命的基础，丰富而有益的生活也是健康的一部分。宝健倡导努力工作，努力享受生活，许下“十年走遍全世界”的承诺，25年来举行 62次国内外旅游研习活动，带领超17万人次伙伴，去到全球33个国家和地区，行程榆5万公里。</p>
+                        <img src="./images/any-slide6-pic_03.jpg" alt="">
+                        <div class="time">在希腊升国旗</div>
+                        <p><b>2015年</b>9月，李总带领宝健精英到希腊进行海外研习，入住世界十大著名酒店之一——雅典威斯汀酒店。然而细心的李总发现，酒店门口悬挂了一排多个国家的国旗，却唯独没有中国国旗。</p>
+                        <p> 李总找到酒店负责人询问，被告知：“酒店只挂经常光顾的国家客人的国旗，我们只在2009年江泽民先生访问希腊入住酒店时，悬挂过中国国旗。”李总反驳：“今天来了300位中国贵宾，现在的中国越来越强盛，难道我们这么多人都没有资格见证自己国家的国旗飘扬吗？”</p>
+                        <p> 酒店负责人被打动，当即派人专程买来了中国国旗，并高高悬挂在了第一根旗杆的位置，这是威斯汀酒店首次为企业升起国旗，让所有宝健伙伴们激动不已，为我们的祖国自豪，为宝健自豪。</p>
+                        <img src="./images/any-slide6-pic_06.jpg" alt="">
+                        <div class="time">万人再游台湾</div>
+                        <p><b>2013年</b>9月，宝健包下当时亚洲最大的邮轮，冠名“宝健号”，作为专属邮轮，承载着万名宝健伙伴，开启了以“新起点、新跨越、新发展”为主题的台湾之旅。这是台湾历史上首次包邮轮万人游活动，不仅引起了台湾的高度重视，甚至全球华人最大的国际民间慈善公益组织慈济特意为宝健开放参观。</p>
+                        <p> 慈济最早的“每人每天省下五角钱”与宝健倡导的“1%”理念有共通之处，李道总裁期盼透过参访慈济，在员工心中种下一颗美善的种子，让人人在纷扰中找回慈悲心与生命价值。</p>
+                        <img src="./images/any-slide6-pic_09.jpg" alt="">
+                        <div class="time">2011年韩国行</div>
+                        <p>2011年9月，超过一万名宝健伙伴同赴韩国，学习“心大”的韩国人的敬业精神，人数创下韩国最大的单一企业旅行团记录，并书写了一段中韩民间交往的佳话。济州岛第一次使用外国企业名字命名商业文化街——宝健路，成为所有宝健人的骄傲。济州授予宝健总裁李道先生“荣誉岛民”证书，肯定宝健万人旅游团对济州岛乃至韩国的重大影响。</p>
+                        <h3>取消日本游</h3>
+                        <p><b> 2010年</b> 春，宝健将日本定为秋季海外研习的目的地，准备组织万人规模的旅游团赴日本旅行。当时恰值日本政府提出“观光立国”的国策，消息传出，引起了日本方面对宝健的高度重视。</p>
+                        <img src="./images/any-slide6-bg_12.jpg" alt="">
+                        <h3>取消日本游</h3>
+                        <p><b>2010年</b> 春，宝健将日本定为秋季海外研习的目的地，准备组织万人规模的旅游团赴日本旅行。当时恰值日本政府提出“观光立国”的国策，消息传出，引起了日本方面对宝健的高度重视。</p>
+                        <p>9月7日，钓鱼岛事件发生。为抗议日本在钓鱼岛事件中的不当行为，9月17日，宝健公司发布声明，“维护中国人的尊严，取消经过1年多策划与大手笔投入的万人团赴日旅游。”
+                        </p>
+                        <p>这一决定获得了广大媒体和评论人士的关注，赢得了全国上下的一致喝彩。宝健永远站在祖国一边，不惜一切代价维护祖国和人民尊严！</p>
+                        <img src="./images/any-slide6-pic_11.jpg" alt="">
+                        <div class="time">万人游台湾</div>
+                        <p> <b>2009年</b> 10月，一万名宝健伙伴组成的超大型旅游团同游台湾，成为当时两岸旅游史上单一企业组织的最大旅游团，“关爱宝岛 健我中华”的主题，为两岸民间交流打下扎实的民意基础。</p>
+                        <img src="./images/any-slide6-pic_13.jpg" alt="">
+                        <div class="time">会见泰国公主</div>
+                        <p><b>2005年</b> 9月，宝健举办以“年轻的心 感悟美丽”为主题的泰国游，7000位宝健精英在曼谷和芭堤雅享受缤纷之旅，创下了国内单一企业海外旅游演习活动最高人数的记录，还得到了泰国长公主邬汶乐及泰国总理的亲切接见！</p>
+                        <img src="./images/any-slide6-pic_15.jpg" alt="">
+                        <div class="time">2004三峡游</div>
+                        <p><b>2004年</b> 11月，4000名宝健精英登上长江三峡豪华邮轮，总结全年的工作成果，激情畅想未来。因人数众多，这次旅游共动用了16航次，创造了重庆三峡接待单一团体游客数量最高的历史记录。</p>
+                        <img src="./images/any-slide6-bg_24.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide slide-7">
+                        <h2>宝健未来生活</h2>
+                        <img src="./images/any-slide7-pic_03.jpg" alt="">
+                        <h3>私人订制 自主健康管理体系</h3>
+                        <h4 style="text-align: left;margin-top: .5rem;">一、健康大数据，反馈身体真实状况</h4>
+                        <p>身体出现的所有问题都有迹可循——基因、环境或是生活习惯。宝健将利用大数据系统，实时监控身体状况，提供全面解决方案，如微量元素的补充、睡眠质量的提升、控制体重的需求、匹配何种运动、甚至是否需要涂抹防晒霜等，将隐患消除在萌芽状态。</p>
+                        <h4 style="text-align: left;margin-top: .5rem;">二、产品多样化、年轻化、生活化</h4>
+                        <p>未来的宝健，产品品类更多、覆盖人群更广，有趣味、技术强、颜值高，可满足各种人群的多样需求。</p>
+                        <p>补充营养、调理器官、辅助运动、纤体减脂、保养皮肤、彩妆扮美、抵抗衰老、制作美食、轻松家务、安心睡眠、舒缓情绪。覆盖全年龄段人群的日常工作生活。</p>
+                        <h4 style="text-align: left;margin-top: .5rem;">三、品质更好、优势更强</h4>
+                        <p>宝健产品的性价比将更高、升级速度更快，走在行业最前沿。</p>
+                        <p>产供销一体化运作：现代化厂房，高科技生产线，高精尖的科研人才，产品核心竞争力无可取代。</p>
+                        <h4 style="text-align: left;margin-top: .5rem;">四、渠道更多、购买更方便</h4>
+                        <p>线下生活馆、网上商城、宝健i购等多种渠道并举，随时随地轻松购买。</p>
+                        <p>强大的物流体系快速将产品送到手中，足不出户即可享受产品上门服务。</p>
+                        <img src="./images/any-slide7-pic_06.jpg" alt="">
+                        <h3>超低门槛 超强支持事业体系</h3>
+                        <h4 style="text-align: left;margin-top: .5rem;">一、自主创业实现梦想</h4>
+                        <p>在宝健，每个梦想都有实现的机会。</p>
+                        <p>不需要投入钱，反而可以轻松赚钱，提升生活品质。不需要高学历，反而可以学习健康相关知识，考取营养师，成为行业专家。不需要风吹日晒、受人白眼，只需要自用并分享，稳定积累口碑人脉。不需要职场倾轧、勾心斗角，严格遵循多劳多得，多努力就有多奖励。</p>
+                        <h4 style="text-align: left;margin-top: .5rem;">二、身体健康时间自由</h4>
+                        <p>消费者越用越优惠，获得健康的身体。分享者越分享赚越多，获得额外收入，成为更好的自己。事业者把自己喜欢的事发展成事业，实现工作和家庭的平衡。精英代理商可以成为宝健的股东。</p>
+                        <p>在宝健，做自己的老板，自己的时间自己说了算。</p>
+                        <h4 style="text-align: left;margin-top: .5rem;">三、公司平台有力支持</h4>
+                        <p>微信、商城、电商等多方位电子移动信息系统支持，助力社群营销、电商平台等新兴带货渠道。</p>
+                        <p>多方赋能，改变形象、训练口才、学习运营、突破性格……解决创业的后顾之忧。</p>
+                        <p style="margin-top: .5rem;">宝健社群系统，将社交转变为可用的资源。不再围着客户转，而是客户向你寻求健康帮助。借助大数据系统精准定位推送营销，无需陌生拜访和被拒绝，甚至不用线下见面，让客户主动来找你。</p>
+
+                        <h3>享受美好生活 实现自身价值</h3>
+                        <p>倡导更加时尚、好玩的生活方式，旅游更丰富、自由，尊贵度不减，目的地更多、选择性更强，“十年走遍全世界”绝不是梦想。</p>
+                        <p>个人形象升级，工作更有尊严，不仅掌握自己的生活，还将关爱惠及身边需要帮助的人，让家人以你为荣。</p>
+                        <p>公益实施更多举措，在教育、精准扶贫、创业就业和赈灾救济方面做出更多努力，充分发挥3个1%的力量，将公益落到实处，真正解决受助者的实际困难。</p>
+
+                    </div>
                 </div>
                 <script>
                     var mySwiper = new Swiper('#anniversary-swiper', {
