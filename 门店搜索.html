@@ -8,9 +8,12 @@
     <!--em标准js代码，请放在页面的最上方，前面最好不要再有JS代码或JS文件-->
     <script type="text/javascript" src="js/rem.js"></script>
     <link rel="stylesheet" href="./css/swiper-bundle.css">
-    <link type="text/css" rel="stylesheet" href="css/css.css" />
+    <script src="./js/swiper-bundle.js"></script>
 
-    <title>新闻</title>
+    <link type="text/css" rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="./css/weui.min.css">
+
+    <title>搜索结果</title>
 </head>
 
 <body>
@@ -94,78 +97,107 @@
         </div>
     </div>
     <!--内容-->
-    <div class="new-two-wrapin">
+    <div class="contact-box story-box">
 
-        <div class="top">
-            <h3>公司资讯</h3>
-            <p><img src="./images/new-two-title_03.png" alt=""></p>
-        </div>
-        <div class="inc-news">
+        <div class="contact-content story-content">
+            <div class="top">
+                <h3>门店搜索</h3>
+                <b><img src="./images/story-title_03.png" alt=""></b>
 
-            <div class="news-list">
-                <div class="item">
-                    <a href="#">
-                        <div class="txt">
-                            <h3> 2020.09.11</h3>
-                            <p>宝健关爱园丁项目<br>收获“CSR中国教育奖”<br>三项殊荣</p>
-                        </div>
-                        <div class="pic"><img src="./images/inc-news-pic_03.png" alt=""></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="txt">
-                            <h3> 2020.07.07</h3>
-                            <p>宝健青年创业行动签约仪式 <br>在河北衡水举行</p>
-                        </div>
-                        <div class="pic"><img src="./images/inc-news-pic_06.png" alt=""></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="txt">
-                            <h3> 2020.06.11</h3>
-                            <p>战疫情助脱贫 <br>宝健上半年捐赠额超3000万元</p>
-                        </div>
-                        <div class="pic"><img src="./images/inc-news-pic_09.png" alt=""></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="txt">
-                            <h3> 2020.05.27</h3>
-                            <p>“关爱园丁·战疫行动”开启 助力教师安全健康复课 </p>
-                        </div>
-                        <div class="pic"><img src="./images/inc-news-pic_09.png" alt=""></div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                        <div class="txt">
-                            <h3>2020.04.08</h3>
-                            <p>守其诺 践其行 宝健再获诚信<br>和质量双料殊荣</p>
-                        </div>
-                        <div class="pic"><img src="./images/inc-news-pic_09.png" alt=""></div>
-                    </a>
-                </div>
             </div>
-            <div class="new-two-pagination">
-                <div class="pagination-box">
-                    <div class="arror-icon arror-l">
-                        <img src="./images/arror-icon-l.png" alt="">
-                    </div>
-                    <div class="pb-num">
-                        <span data-id="1" class="pagination-btn pagination-active">1</span>
-                        <span data-id="2" class="pagination-btn ">2</span>
-                        <span data-id="3" class="pagination-btn ">3</span>
-                    </div>
-                    <div class="arror-icon arror-r">
-                        <img src="./images/arror-icon-r.png" alt="">
-                    </div>
+            <p style="margin-top: .2rem;"><b>选择地区：</b></p>
+            <!-- 省份/城市选择器 -->
+
+            <div class="select-address">
+                <div class="select">
+                    <div class="provice" id="selectAreaP">省份</div>
+                    <div class="arror-b"></div>
                 </div>
+                <div class="select">
+                    <div class="provice" id="selectAreaC">城市</div>
+                    <div class="arror-b"></div>
+                </div>
+                <span class="select-search">搜索</span>
             </div>
+
+            <div class="search-result">
+                <div class="result-box">
+                    <a href="#">
+                        <div class="txt">
+                            <h3>XX XXXXXXXXXX</h3>
+                            <p><b>地址：</b> <span>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXX XXXXXXXXX</span></p>
+                            <p><b>电话：</b> <span>XXX - XXXXXXXXXXX</span></p>
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="result-box">
+                    <a href="#">
+                        <div class="txt">
+                            <h3>XX XXXXXXXXXX</h3>
+                            <p><b>地址：</b> <span>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXX XXXXXXXXX</span></p>
+                            <p><b>电话：</b> <span>XXX - XXXXXXXXXXX</span></p>
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="result-box">
+                    <a href="#">
+                        <div class="txt">
+                            <h3>XX XXXXXXXXXX</h3>
+                            <p><b>地址：</b> <span>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXX XXXXXXXXX</span></p>
+                            <p><b>电话：</b> <span>XXX - XXXXXXXXXXX</span></p>
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="result-box">
+                    <a href="#">
+                        <div class="txt">
+                            <h3>XX XXXXXXXXXX</h3>
+                            <p><b>地址：</b> <span>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXX XXXXXXXXX</span></p>
+                            <p><b>电话：</b> <span>XXX - XXXXXXXXXXX</span></p>
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="result-box">
+                    <a href="#">
+                        <div class="txt">
+                            <h3>XX XXXXXXXXXX</h3>
+                            <p><b>地址：</b> <span>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXX XXXXXXXXX</span></p>
+                            <p><b>电话：</b> <span>XXX - XXXXXXXXXXX</span></p>
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="result-box">
+                    <a href="#">
+                        <div class="txt">
+                            <h3>XX XXXXXXXXXX</h3>
+                            <p><b>地址：</b> <span>XXXXXXXXXXX XXXXXXXXX XXXXXXXXXX XXXXXXX XXXXXXXXX</span></p>
+                            <p><b>电话：</b> <span>XXX - XXXXXXXXXXX</span></p>
+
+                        </div>
+
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="more">
+                <p>下拉查看更多</p>
+
+            </div>
+
         </div>
     </div>
+
 
 
 
@@ -209,6 +241,8 @@
 
 
 </body>
+<script src="./js/weui.min.js"></script>
+
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 <script type="text/javascript">
     $('#cls').click(function() {
@@ -227,33 +261,33 @@
             left: '0'
         });
     })
-    $('.pagination-btn').click(function() {
-        $(this).addClass('pagination-active');
-        $(this).siblings().removeClass('pagination-active');
-    })
-    $('.arror-l').click(function() {
-        let current = $('.pagination-active').attr('data-id');
-        $($('.pagination-btn')[current - 1]).removeClass('pagination-active');
-        if (current <= 1) {
-            current = 3;
-        } else {
-            current--;
-        }
+</script>
 
-        $($('.pagination-btn')[current - 1]).addClass('pagination-active')
-    })
-    $('.arror-r').click(function() {
-        let current = $('.pagination-active').attr('data-id');
-        $($('.pagination-btn')[current - 1]).removeClass('pagination-active');
-        if (current >= 3) {
-            current = 1;
-        } else {
-            current++;
-        }
+<script src="./js/city.js"></script>
+<script>
+    $(function() {
+        // 点击所在地区
+        $('.select').on('click', function() {
+            // 地址三级联动
+            cityData3.forEach(function(ele) {
+                ele.children.forEach(function(ele) {
+                    ele.children = null;
+                })
+            });
+            weui.picker(cityData3, {
+                defaultValue: ["110000", "110100", "110101"],
+                onConfirm: function(result) {
+                    var str = "";
+                    var cityArr = [];
+                    console.log(result);
 
-        $($('.pagination-btn')[current - 1]).addClass('pagination-active')
+
+                    $("#selectAreaP").text(result[0].label);
+                    $("#selectAreaC").text(result[1].label);
+                }
+            })
+        });
     })
 </script>
-<script src="./js/swiper-bundle.js"></script>
 
 </html>

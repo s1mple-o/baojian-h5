@@ -1553,6 +1553,7 @@ footer .copy p {
 }
 
 .enter-his-swiper .txt p {
+    padding: 0 .2rem;
     font-size: .28rem;
     font-family: 'SourceHanSansCN-Light';
     text-align: center;
@@ -2434,9 +2435,6 @@ footer .copy p {
     border-radius: 10px;
     margin-bottom: .3rem;
     background-image: linear-gradient(to right, #016532, #7caf95);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start; */
 }
 
 .business-content .business-server .select-result .res-item h3 {
@@ -2517,6 +2515,558 @@ footer .copy p {
 }
 
 
+/* 善行动 */
+
+.action-box {
+    width: 100%;
+}
+
+.action-box .banner {
+    width: 100%;
+    background-color: #000;
+    position: relative;
+}
+
+.action-box .banner video {
+    width: 100%;
+    height: 4.2rem;
+}
+
+.action-box .banner .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: .7rem;
+    height: .7rem;
+}
+
+.action-box .banner .play img {
+    width: 100%;
+    height: 100%;
+}
+
+.action-content {
+    width: 100%;
+}
+
+.action-content .fund {
+    width: 100%;
+    min-height: 7.8rem;
+    padding: .3rem .55rem;
+    background: url(../images/fund-bg_02.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.action-content .fund .title {
+    border-bottom: 1px solid #fff;
+    padding-bottom: .2rem;
+}
+
+.action-content .fund .title h3 {
+    font-size: .48rem;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+.action-content .fund .title b {
+    font-size: .48rem;
+    font-family: 'BarlowCondensed-ExtraBold';
+    text-align: left;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    color: transparent;
+    background-image: linear-gradient(135deg, #988363 0%, #f4edd0 30%, #e1b880 100%);
+}
+
+.action-content .fund p {
+    font-size: .28rem;
+    font-family: 'SourceHanSansCN-Light';
+    font-weight: 100;
+    color: #fff;
+    padding: .3rem 0;
+    text-indent: 2em;
+}
+
+.action-content .welfare .wf-tap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .3rem;
+    margin-top: -.6rem;
+}
+
+.action-content .wf-tap a {
+    width: 1.68rem;
+    height: .9rem;
+    line-height: .8rem;
+    text-align: center;
+    border: 2px solid #004c2b;
+    border-radius: 10px;
+    font-size: .28rem;
+    font-weight: bold;
+    color: #000;
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+.action-content .wf-tap .active {
+    background-color: #004c2b;
+    color: #fff;
+    border: 0;
+}
+
+.welfare-swiper-box {
+    width: 100%;
+    padding: .33rem;
+    padding-top: 0;
+}
+
+#welfare-swiper {
+    width: 100%;
+}
+
+#welfare-swiper .swiper-slide img {
+    width: 100%;
+    margin-top: .3rem;
+    margin-bottom: .3rem;
+}
+
+#welfare-swiper .swiper-slide h3 {
+    font-size: .36rem;
+    font-family: 'SourceHanSansCN-Bold';
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+#welfare-swiper .swiper-slide p {
+    font-size: .28rem;
+    font-weight: 100;
+    font-family: 'SourceHanSansCN-Light';
+    text-indent: 2em;
+    line-height: 1.8;
+    padding: .3rem 0;
+}
+
+.action-content .ben-ach {
+    width: 100%;
+    height: 13.14rem;
+    margin-top: .6rem;
+    padding: 0 .55rem;
+    background: url(../images/big-event-bg_12.jpg) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.action-content .ben-ach .title {
+    padding-bottom: .2rem;
+    padding-top: 1.2rem;
+}
+
+.action-content .ben-ach .title h3 {
+    font-size: .48rem;
+    text-align: left;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+.action-content .ben-ach .title b {
+    font-size: .48rem;
+    font-family: 'BarlowCondensed-ExtraBold';
+    text-align: left;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    color: transparent;
+    background-image: linear-gradient(135deg, #988363 0%, #f4edd0 30%, #e1b880 100%);
+}
+
+
+/* 人才招聘 */
+
+.personnel-box {
+    background: url(../images/work-bg_3.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+    background-color: #000;
+}
+
+.personnel-box .banner {
+    width: 100%;
+    height: 4.8rem;
+}
+
+.personnel-box .banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.personnel-content {
+    width: 100%;
+    padding: .3rem .33rem;
+    padding-bottom: 3.2rem;
+    /* background-color: #000; */
+}
+
+.personnel-content .top {
+    width: 100%;
+    padding: 0 .22rem;
+    padding-bottom: .8rem;
+    border-bottom: 2px solid #fff;
+}
+
+.personnel-content .top h3 {
+    font-size: .48rem;
+    font-family: 'SourceHanSansCN-Bold';
+    color: #fff;
+    font-weight: bold;
+}
+
+.personnel-content .top b {
+    width: 100%;
+}
+
+.personnel-content .top b img {
+    width: 100%;
+}
+
+.personnel-content .top p {
+    font-size: .28rem;
+    font-weight: 100;
+    font-family: 'SourceHanSansCN-Light';
+    color: #fff;
+    padding: .3rem 0;
+}
+
+.personnel-content .top>span {
+    font-size: .36rem;
+    font-family: 'SourceHanSansCN-ExtraLight';
+    font-weight: 100;
+    color: #fff;
+    display: flex;
+}
+
+.personnel-content .top>span .st {
+    width: 1.8rem;
+    text-align: justify;
+    text-align-last: justify;
+    font-size: .36rem;
+    font-family: 'SourceHanSansCN-Bold';
+    color: #fff;
+    font-weight: bold;
+}
+
+.personnel-content .top>span b {
+    display: inline-block;
+    width: auto;
+}
+
+.personnel-content .top>span span {
+    flex: 1;
+}
+
+.personnel-content .work {
+    width: 100%;
+}
+
+.personnel-content .work .work-tap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.45rem;
+}
+
+.personnel-content .work .work-tap a {
+    width: 2.2rem;
+    height: .9rem;
+    border: 2px solid #004c2b;
+    border-radius: 10px;
+    font-size: .28rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: .85rem;
+    font-family: 'SourceHanSansCN-Bold';
+}
+
+.personnel-content .work .work-tap .active {
+    border: none;
+    background-image: linear-gradient(45deg, #00783b, #093f2c);
+    color: #fff;
+}
+
+#work-swiper {
+    padding-top: .3rem;
+}
+
+#work-swiper .swiper-slide {
+    height: 7.7rem;
+    overflow-y: auto;
+    padding: .4rem .23rem;
+    background-color: #fff;
+}
+
+#work-swiper .swiper-slide .work-item {
+    width: 100%;
+    padding: .2rem 0;
+}
+
+#work-swiper .swiper-slide .work-item h3 {
+    font-size: .28rem;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: bold;
+    padding-bottom: .1rem;
+    color: #a0a0a0;
+}
+
+#work-swiper .swiper-slide .work-item p {
+    font-size: .28rem;
+    font-family: 'SourceHanSansCN-Light';
+    font-weight: 100;
+    padding-bottom: .1rem;
+    color: #a0a0a0;
+}
+
+#work-swiper .swiper-slide .active h3,
+#work-swiper .swiper-slide .active p {
+    color: #000;
+}
+
+
+/* 联系我们 */
+
+.contact-box {
+    width: 100%;
+    background: url(../images/work-bg_3.jpg) no-repeat bottom center;
+    background-size: 100% auto;
+    background-color: #000;
+}
+
+.contact-content {
+    padding: .6rem .3rem 2rem;
+}
+
+.contact-content .top {
+    padding: 0 .2rem .3rem;
+    border-bottom: 2px solid #fff;
+}
+
+.contact-content .top h3 {
+    font-size: .48rem;
+    font-family: 'SourceHanSansCN-Bold';
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-content .top b {
+    width: 100%;
+}
+
+.contact-content .top b img {
+    width: 100%;
+}
+
+.contact-content .top h4 {
+    font-size: .36rem;
+    font-family: 'SourceHanSansCN-Bold';
+    color: #fff;
+    font-weight: bold;
+    padding-top: .2rem;
+}
+
+.contact-content .top p {
+    font-size: .28rem;
+    font-family: 'SourceHanSansCN-Light';
+    font-weight: 100;
+    line-height: 1.8;
+    color: #fff;
+}
+
+
+/* 搜索页面 */
+
+.search-result {
+    height: 17.9rem;
+    overflow-y: auto;
+}
+
+.contact-content>p {
+    padding-left: .2rem;
+    font-size: .24rem;
+    color: #fff;
+    font-family: 'SourceHanSansCN-Light';
+    font-weight: 100;
+    padding-top: .5rem;
+}
+
+.search-result .result-box {
+    width: 100%;
+}
+
+.search-result .result-box a {
+    width: 100%;
+    height: 2.7rem;
+    margin-top: .25rem;
+    padding: 0 .2rem;
+    border-radius: 15px;
+    background-image: linear-gradient(to right, #016532, #000000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-result .result-box a .txt {
+    width: 3.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.search-result .result-box a .txt h3 {
+    display: inline-block;
+    font-size: .48rem;
+    color: #fff;
+    font-family: 'SourceHanSansCN-Light';
+    font-weight: 100;
+    border-bottom: 2px solid #fff;
+    margin-bottom: .1rem;
+}
+
+.search-result .result-box a .txt p {
+    padding-left: 0;
+    font-size: .24rem;
+    color: #fff;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.search-result .result-box a .pic {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 32px;
+    overflow: hidden;
+}
+
+.search-result .result-box a .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content .more {
+    position: relative;
+}
+
+.contact-content .more p {
+    padding-top: .3rem;
+    font-size: .28rem;
+    color: #fff;
+    font-family: ' SourceHanSansCN-Medium';
+    text-align: center;
+}
+
+.contact-content .more p::after {
+    content: '';
+    position: absolute;
+    bottom: -.6rem;
+    left: 50%;
+    transform: translateX(-50%) scale(.6, 1);
+    width: 0;
+    height: 0;
+    border-top: .2rem solid #fff;
+    border-right: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid transparent;
+}
+
+
+/* 门店搜索 */
+
+.story-content .select-address {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-content .select-address span {
+    display: block;
+    height: .6rem;
+    line-height: .8rem;
+}
+
+.story-content .select-address .select {
+    cursor: pointer;
+    width: 2.7rem;
+    height: .6rem;
+    border-radius: 30px;
+    padding: 0 .2rem;
+    margin-top: .2rem;
+    background-color: transparent;
+    color: #fff;
+    line-height: .6rem;
+    border: 1px solid #fff;
+    position: relative;
+}
+
+.story-content .select-address .select .arror-b {
+    position: absolute;
+    top: 50%;
+    right: .3rem;
+    transform: translateY(-50%);
+    width: .2rem;
+    height: .1rem;
+    background: url(../images/arror-icon-tb_07.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.story-content .select-address .select-search {
+    cursor: pointer;
+    font-size: .32rem;
+    color: #016532;
+    font-family: 'SourceHanSansCN-Bold';
+    font-weight: bold;
+}
+
+.story-box .search-result {
+    height: 15rem;
+}
+
+.story-box .search-result .result-box a {
+    background-image: linear-gradient(to right, #016532, #013319);
+}
+
+.story-box .search-result .result-box a .txt {
+    width: 100%;
+}
+
+.story-box .search-result .result-box a .txt h3 {
+    min-width: 3.28rem;
+}
+
+.story-box .search-result .result-box a .txt p {
+    display: flex;
+}
+
+.story-box .search-result .result-box a .txt p>b {
+    width: .88rem;
+}
+
+.story-box .search-result .result-box a .txt p>span {
+    flex: 1;
+    font-weight: 100;
+}
+
+
 /*兼容老设备的rem-px基准*/
 
 html {
@@ -2526,6 +3076,12 @@ html {
 @media screen and (max-width: 485px) {
     .search-box .input-box input {
         padding-left: .8rem;
+    }
+    .search-result .result-box a .pic {
+        border-radius: 15px;
+    }
+    #business_tool_swiper .ercode .txt span {
+        margin: .2rem 0 .2rem;
     }
 }
 

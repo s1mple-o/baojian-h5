@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width,height=device-height, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0,shrink-to-fit=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--em标准js代码，请放在页面的最上方，前面最好不要再有JS代码或JS文件-->
+    <script type="text/javascript" src="js/rem.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <script src="./js/swiper-bundle.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css/css.css" />
+
+    <title>善行动</title>
+</head>
+
+<body>
+    <!--顶部-->
+    <header>
+        <div class="menu" id="menu"><img src="./images/menu.png" alt=""></div>
+        <div class="logo">
+            <h1>
+                <a href="#"><img src="./images/logo.png" alt=""></a>
+            </h1>
+        </div>
+        <div class="search" id="s_show">
+            <img src="./images/search.png" alt="">
+        </div>
+    </header>
+    <!-- 菜单栏 -->
+    <div class="m-menu" id="m_menu">
+        <div class="m-menu-top">
+            <div class="closed" id="cls">
+
+            </div>
+            <div class="m-menu-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="menu-list">
+            <a href="./index.html">
+                <span><img src="./images/menu-icon_03.png" alt=""></span>
+                <h3>首页</h3>
+            </a>
+            <a href="#">
+                <span><img src="./images/menu-icon_06.png" alt=""></span>
+                <h3>产品中心</h3>
+            </a>
+            <a href="./创业驱动.html">
+                <span><img src="./images/menu-icon_10.png" alt=""></span>
+                <h3>创业驱动</h3>
+            </a>
+            <a href="./善行动.html">
+                <span><img src="./images/menu-icon_12.png" alt=""></span>
+                <h3>善·行动</h3>
+            </a>
+            <a href="#">
+                <span><img src="./images/menu-icon_14.png" alt=""></span>
+                <h3>优选平台</h3>
+            </a>
+            <a href="./走进宝健.html">
+                <span><img src="./images/menu-icon_16.png" alt=""></span>
+                <h3>走进宝健</h3>
+            </a>
+        </div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search-box" id="s_box">
+        <header>
+            <div class="s-header">
+                <div class="menu" id="s_cls"><img src="./images/closed-icon_03.png" alt=""></div>
+                <div class="logo">
+                    <h1>
+                        <a href="#"><img src="./images/search-logo_03.png" alt=""></a>
+                    </h1>
+                </div>
+                <div class="search">
+                </div>
+            </div>
+            <div class="search-input">
+                <div class="input-box">
+                    <div class="icon-search"><img src="./images/white-search-icon_03.png" alt=""></div>
+                    <div class="icon-cls"></div>
+                    <input type="text" placeholder="请输入关键词">
+                </div>
+                <span class="s-btn">搜索</span>
+            </div>
+        </header>
+        <div class="hot-search">
+            <a href="#">宝贝公益</a>
+            <a href="#">宝贝创业</a>
+            <a href="#">宝贝商城</a>
+            <a href="#">麟智康 </a>
+        </div>
+    </div>
+    <!--内容-->
+    <div class="action-box">
+        <div class="banner">
+            <video src="./video/video.mp4" id="action-video"></video>
+            <div class="play" id="play">
+                <img src="./images/play_03.png" alt="">
+            </div>
+        </div>
+        <div class="action-content">
+            <div class="fund">
+                <div class="title">
+                    <h3>宝健公益基金会</h3>
+                    <b>PUBLIC BENEFIT FOUNDATION</b>
+                </div>
+                <p>北京市宝健公益基金会是由宝健（中国）有限公司根据《基金会管理条例》发起，经北京市民政局批准，于2016年3月成立的非公募基金会。</p>
+                <p> 延续宝健二十多年的公益历程，宝健公益基金会在希望工程、关爱园丁、清泉计划、青年创业就业、边疆援助等项目中持续做出突出贡献。目前，宝健公益基金会着重围绕教育公益、青创计划、精准扶贫、赈济救灾等领域开展工作。</p>
+            </div>
+            <div class="welfare">
+                <div class="wf-tap">
+                    <a data-id="1" class="tap-btn-bpt active" href="javascript:;">教育公益</a>
+                    <a data-id="2" class="tap-btn-bpt " href="javascript:;">精准扶贫</a>
+                    <a data-id="3" class="tap-btn-bpt " href="javascript:;">青创计划</a>
+                    <a data-id="4" class="tap-btn-bpt " href="javascript:;">赈济救灾</a>
+
+                </div>
+                <div class="welfare-swiper-box">
+                    <div class="swiper-container swiper-no-swiping" id="welfare-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/welfare-pic_05.jpg" alt="">
+                                <h3>希望学校</h3>
+                                <p>宝健从事的是以健康、家庭幸福、实现人生价值为初衷的良心事业，遵循的是“三个爱你”的企业文化，这份深深融入公司血脉的责任感，让宝健在公司成立之初即坚定地选择与公益同行、共同成长。</p>
+                                <p> “百年大计，教育为本。”教育能让人具有摆脱依赖、改变命运、回馈社会的能力，更是社会进步的基石，是中华民族最根本的事业，与宝健“掌握自主，分享关爱”的核心理念完全契合。因此，宝健在教育公益方面投入了诸多心力。</p>
+                                <img src="./images/welfare-pic_08.jpg" alt="">
+                                <h3>关爱园丁</h3>
+                                <p>宝健从2011年起就开始了对教师群体的专项援助。2017年，宝健公益基金会联合共青团中央、中国青少年发展基金会，共同推出“关爱园丁”公益项目，投入一亿资金，计划在五年内，对宝健希望学校教师进行身体健康、教学能力、环境等多个方面的改善。
+                                </p>
+                                <p style="text-indent: 0;"><b>健康计划</b>——针对教师健康问题，提供健康讲堂、义诊或咨询和营养保健食品，提高他们自主健康的能力。</p>
+                                <p style="text-indent: 0;"><b>进修计划</b>——为教师提供脱产研修机会，帮助他们提高业务精度。</p>
+                                <p style="text-indent: 0;"><b>海外研习计划</b>——通过海外研习开拓教师的视野，了解先进教育理念。
+                                </p>
+                                <img src="./images/welfare-pic_10.jpg" alt="">
+                                <h3>清泉计划</h3>
+                                <p>宝健“清泉计划”重在帮助经济条件特别落后、物质条件不足的贫困地区改善校园环境，自2017年以来，已为近30所贫困地区的宝健希望学校捐建太阳能浴室和环保厕所，解决当地师生最迫切最基本生活需求。
+                                </p>
+                                <p>环境改善计划——改善校舍、教师宿舍、加强教学资源配置，提供良好的教学环境。</p>
+                            </div>
+                            <div class="swiper-slide"> <img src="./images/welfare-pic_05.jpg" alt="">
+                                <h3>希望学校</h3>
+                                <p>宝健从事的是以健康、家庭幸福、实现人生价值为初衷的良心事业，遵循的是“三个爱你”的企业文化，这份深深融入公司血脉的责任感，让宝健在公司成立之初即坚定地选择与公益同行、共同成长。</p>
+                                <p> “百年大计，教育为本。”教育能让人具有摆脱依赖、改变命运、回馈社会的能力，更是社会进步的基石，是中华民族最根本的事业，与宝健“掌握自主，分享关爱”的核心理念完全契合。因此，宝健在教育公益方面投入了诸多心力。</p>
+                                <img src="./images/welfare-pic_08.jpg" alt="">
+                                <h3>关爱园丁</h3>
+                                <p>宝健从2011年起就开始了对教师群体的专项援助。2017年，宝健公益基金会联合共青团中央、中国青少年发展基金会，共同推出“关爱园丁”公益项目，投入一亿资金，计划在五年内，对宝健希望学校教师进行身体健康、教学能力、环境等多个方面的改善。
+                                </p>
+                                <p style="text-indent: 0;"><b>健康计划</b>——针对教师健康问题，提供健康讲堂、义诊或咨询和营养保健食品，提高他们自主健康的能力。</p>
+                                <p style="text-indent: 0;"><b>进修计划</b>——为教师提供脱产研修机会，帮助他们提高业务精度。</p>
+                                <p style="text-indent: 0;"><b>海外研习计划</b>——通过海外研习开拓教师的视野，了解先进教育理念。
+                                </p>
+                                <img src="./images/welfare-pic_10.jpg" alt="">
+                                <h3>清泉计划</h3>
+                                <p>宝健“清泉计划”重在帮助经济条件特别落后、物质条件不足的贫困地区改善校园环境，自2017年以来，已为近30所贫困地区的宝健希望学校捐建太阳能浴室和环保厕所，解决当地师生最迫切最基本生活需求。
+                                </p>
+                                <p>环境改善计划——改善校舍、教师宿舍、加强教学资源配置，提供良好的教学环境。</p>
+                            </div>
+                            <div class="swiper-slide"> <img src="./images/welfare-pic_05.jpg" alt="">
+                                <h3>希望学校</h3>
+                                <p>宝健从事的是以健康、家庭幸福、实现人生价值为初衷的良心事业，遵循的是“三个爱你”的企业文化，这份深深融入公司血脉的责任感，让宝健在公司成立之初即坚定地选择与公益同行、共同成长。</p>
+                                <p> “百年大计，教育为本。”教育能让人具有摆脱依赖、改变命运、回馈社会的能力，更是社会进步的基石，是中华民族最根本的事业，与宝健“掌握自主，分享关爱”的核心理念完全契合。因此，宝健在教育公益方面投入了诸多心力。</p>
+                                <img src="./images/welfare-pic_08.jpg" alt="">
+                                <h3>关爱园丁</h3>
+                                <p>宝健从2011年起就开始了对教师群体的专项援助。2017年，宝健公益基金会联合共青团中央、中国青少年发展基金会，共同推出“关爱园丁”公益项目，投入一亿资金，计划在五年内，对宝健希望学校教师进行身体健康、教学能力、环境等多个方面的改善。
+                                </p>
+                                <p style="text-indent: 0;"><b>健康计划</b>——针对教师健康问题，提供健康讲堂、义诊或咨询和营养保健食品，提高他们自主健康的能力。</p>
+                                <p style="text-indent: 0;"><b>进修计划</b>——为教师提供脱产研修机会，帮助他们提高业务精度。</p>
+                                <p style="text-indent: 0;"><b>海外研习计划</b>——通过海外研习开拓教师的视野，了解先进教育理念。
+                                </p>
+                                <img src="./images/welfare-pic_10.jpg" alt="">
+                                <h3>清泉计划</h3>
+                                <p>宝健“清泉计划”重在帮助经济条件特别落后、物质条件不足的贫困地区改善校园环境，自2017年以来，已为近30所贫困地区的宝健希望学校捐建太阳能浴室和环保厕所，解决当地师生最迫切最基本生活需求。
+                                </p>
+                                <p>环境改善计划——改善校舍、教师宿舍、加强教学资源配置，提供良好的教学环境。</p>
+                            </div>
+                        </div>
+                        <script>
+                            var ws = new Swiper('#welfare-swiper', {
+                                direction: 'horizontal', // 垂直切换选项
+                                loop: true, // 循环模式选项
+
+
+                            })
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ben-ach">
+                <div class="title">
+                    <h3>公益大事记 </h3>
+                    <b>PUBLIC BENEFIT ACHIEVEMENT</b>
+                </div>
+                <div class="enter-his-swiper">
+                    <div class="swiper-container" id="enter-his">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="pic"><img src="./images/ben-ach-pic_13.jpg" alt=""></div>
+                                <div class="txt">
+                                    <div class="time">1997</div>
+                                    <h3>宝健第一所希望小学落成
+                                    </h3>
+                                    <p>宝健的公益之路和健康事业同时起步，1997年即在张家口捐建了第一所宝健希望小学</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pic"><img src="./images/ben-ach-pic_13.jpg" alt=""></div>
+                                <div class="txt">
+                                    <div class="time">1997</div>
+                                    <h3>宝健第一所希望小学落成
+                                    </h3>
+                                    <p>宝健的公益之路和健康事业同时起步，1997年即在张家口捐建了第一所宝健希望小学</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="pic"><img src="./images/ben-ach-pic_13.jpg" alt=""></div>
+                                <div class="txt">
+                                    <div class="time">1997</div>
+                                    <h3>宝健第一所希望小学落成
+                                    </h3>
+                                    <p>宝健的公益之路和健康事业同时起步，1997年即在张家口捐建了第一所宝健希望小学</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <script>
+                            var mySwiper = new Swiper('#enter-his', {
+                                direction: 'horizontal', // 垂直切换选项
+                                loop: true, // 循环模式选项
+                                // 如果需要前进后退按钮
+                                navigation: {
+                                    nextEl: '.swiper-button-next',
+                                    prevEl: '.swiper-button-prev',
+                                }
+
+
+
+                            })
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--底部-->
+    <footer>
+        <div class="footer-inner">
+            <div class="ft-logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="address">
+                <p>中国北京经济技术开发区西环南路16号(宝健科技园）<br> (010) 6781-9900/9699（传真） </p>
+            </div>
+            <div class="customer-server">
+                <h3>客服热线</h3>
+                <p>4000-919-666</p>
+            </div>
+            <div class="parter">
+                <h3>客服热线</h3>
+                <div class="parter-list">
+                    <p><a href="#">国青年创业就业基金会</a> </p> <span>|</span>
+                    <p><a href="#">中国青少年发展基金会</a></p>
+                </div>
+            </div>
+            <div class="links">
+                <a href="#">宝酷网</a>
+                <span>|</span>
+                <a href="#">批次查询</a>
+                <span>|</span>
+                <a href="#">人才招聘</a>
+                <span>|</span>
+                <a href="#">联系我们</a>
+                <span>|</span>
+                <a href="#">商务部直销管理</a>
+            </div>
+            <div class="copy">
+                <p>京ICP备19007569号-4 京公网安备11011502003709号 </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $('#cls').click(function() {
+        $('#m_menu').animate({
+            left: '-100%'
+        });
+    })
+    $('#s_show').click(function() {
+        $('#s_box').fadeIn();
+    })
+    $('#s_cls').click(function() {
+        $('#s_box').fadeOut();
+    })
+    $('#menu').click(function() {
+        $('#m_menu').animate({
+            left: '0'
+        });
+    })
+
+
+    //视频控制
+
+    $('#play').click(function() {
+        $('#play').hide();
+        $('#action-video').trigger('play');
+        return false;
+    })
+    $('#action-video').click(function() {
+        $('#play').show();
+        $('#action-video').trigger('pause');
+        return false;
+
+    })
+
+    // tap切换
+    $('.tap-btn-bpt').click(function() {
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        ws.slideTo($(this).attr('data-id'));
+    })
+</script>
+
+
+</html>
